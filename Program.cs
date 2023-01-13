@@ -1,6 +1,7 @@
 ﻿// Задача. Проверить элементы массива, если элемент больше трёх символов, то его удалить. Вывести оставшиеся элементы.
 
-string[] array = { "hello", "2", "world", ":)"};
+
+string[] array = { "hello", "2", "world", ":)" };
 
 System.Console.WriteLine("Изначальный массив: ");
 PrintArray(array);
@@ -37,7 +38,7 @@ PrintArray(array);
 
 string[] RemoveArray(string[] array, int index)
 {
-    string[] newArray = new string[array.Length  - 1];
+    string[] newArray = new string[array.Length - 1];
     for (int i = 0; i < index; i++)
     {
         newArray[i] = array[i];
@@ -46,7 +47,7 @@ string[] RemoveArray(string[] array, int index)
     {
         newArray[i - 1] = array[i];
     }
-    array = newArray;;
+    array = newArray; ;
     return newArray;
 }
 
